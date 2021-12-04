@@ -5,3 +5,4 @@ fun loadResource(path: String): URI {
     requireNotNull(resource) { "Resource $path not found" }
     return resource
 }
+
