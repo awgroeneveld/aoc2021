@@ -6,3 +6,5 @@ fun loadResource(path: String): URI {
     return resource
 }
 
+inline fun<reified T> Pair<Int,Int>.createArray(initialValue:T) = Array(this.first){ Array(this.second){initialValue}}
+
